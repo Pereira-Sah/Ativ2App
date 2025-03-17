@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B6F2CEDB"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/number_peso"
+        android:layout_width="239dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#F35991"
+        android:ems="10"
+        android:hint="KG"
+        android:inputType="numberDecimal"
+        android:textAlignment="viewEnd"
+        android:textColorHint="#f35991"
+        android:textColorLink="#F35991"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.532" />
+
+    <EditText
+        android:id="@+id/number_altura"
+        android:layout_width="239dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#F35991"
+        android:ems="10"
+        android:hint="M"
+        android:inputType="numberDecimal"
+        android:textAlignment="viewEnd"
+        android:textColorHint="#F35991"
+        android:textColorLink="#f35991"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.671" />
+
+    <TextView
+        android:id="@+id/txv_altura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Altura em metros"
+        android:textColor="#F35991"
+        android:textColorLink="#F35991"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.605" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="240dp"
+        android:layout_height="2dp"
+        android:background="#f35991 "
+        android:backgroundTint="#f35991"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.403"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.407" />
+
+    <TextView
+        android:id="@+id/txv_calculadora"
+        android:layout_width="234dp"
+        android:layout_height="29dp"
+        android:fontFamily="@font/poppins"
+        android:text="Calculadora - IMC"
+        android:textColor="#F35991"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.37" />
+
+    <TextView
+        android:id="@+id/txv_peso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Peso em KG"
+        android:textColor="#F35991"
+        android:textColorLink="#F35991"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.469" />
+
+    <ImageView
+        android:id="@+id/img_peso"
+        android:layout_width="23dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/number_peso"
+        app:layout_constraintEnd_toEndOf="@+id/number_peso"
+        app:layout_constraintHorizontal_bias="0.013"
+        app:layout_constraintStart_toStartOf="@+id/number_peso"
+        app:layout_constraintTop_toTopOf="@+id/number_peso"
+        app:layout_constraintVertical_bias="0.25"
+        app:srcCompat="@drawable/peso"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="167dp"
+        android:layout_height="131dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13"
+        app:srcCompat="@drawable/body_mass_index" />
+
+    <ImageView
+        android:id="@+id/img_altura"
+        android:layout_width="26dp"
+        android:layout_height="23dp"
+        app:layout_constraintBottom_toBottomOf="@+id/number_altura"
+        app:layout_constraintEnd_toEndOf="@+id/number_altura"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/number_altura"
+        app:layout_constraintTop_toTopOf="@+id/number_altura"
+        app:layout_constraintVertical_bias="0.28"
+        app:srcCompat="@drawable/regua"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_calcular"
+        android:layout_width="217dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#F35991"
+        android:text="Calcular"
+        android:textColor="#fff"
+        android:textColorLink="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.757"
+        tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
